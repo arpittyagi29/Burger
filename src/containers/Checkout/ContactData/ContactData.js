@@ -170,7 +170,7 @@ checkValidity(value,rules){
                         touched={formElement.config.touched}
                         changed={(event) => this.inputChangedHandler(event, formElement.id)} />
                 ))}
-                <Button btnType="Success" disabled={!this.state.formisValid}>ORDER</Button>
+                <Button btnType="Success" disabled={this.state.formisValid} >ORDER</Button>
             </form>
         );
         if ( this.state.loading ) {
